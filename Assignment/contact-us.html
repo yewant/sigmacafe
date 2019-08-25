@@ -1,0 +1,45 @@
+<html>
+<head><title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<ul class="nav-bar">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="checkmore.html">CHECK MORE</a></li>
+			<li><a href="contact-us.html" class="active">CONTACT</a></li>
+			<li><a href="login.html">LOGIN</a></li>
+		</ul>
+	</div>
+	<div class="contact">
+		<h1>We are located in : Balkot, Bhaktapur</h1>
+		<h1>contact no : 9865055438</h1>
+		<h1><a href="mailto:yewantkarki18@gmail.com">Contact-Us</a></h1>
+	</div>
+	</header>
+	<img height="400px" width="50%" name="slide">
+	<div class="footer">
+			<span>SigmaCafe &copy; All Rights Reserved </span>
+			<span><a href=contact-us.html>Contact Info</a></span>
+			<span><a href="index.html">Home</a></span>
+	</div>
+	<script type="text/javascript">
+		var step=1;
+		var image1="image/a.jpg";
+		var image2="image/b.jpg";
+		var image3="image/c.jpg";
+		var image4="image/f.jpg";
+		function slideit()
+		{
+			if (step < 4)
+				step++;
+			else
+				step=1;
+			document.images.slide.src=eval("image"+step);
+			setTimeout("slideit()",2500);
+		}
+		slideit();
+	</script>
+</BODY>
